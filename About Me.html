@@ -102,6 +102,7 @@
 		/*  v  ICON TABLE  v  */
 		nav 
 		{
+			width: 100%;
   			padding-top: 45px;
   			padding-left: 0px;
   			padding-right: 0px; 
@@ -124,8 +125,9 @@
 		nav > ul > li 
 		{
   			float: left;
-  			width: 383.3px; /* Icon Spacing */
   			height: 65px;
+			width: 16.6667%; /* fallback for non-calc() browsers */
+    			width: calc(100% / 5);
   			line-height: 65px;
   			position: relative;
   			text-transform: uppercase;
