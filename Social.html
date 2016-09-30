@@ -140,13 +140,20 @@
   			font-size: 14px;
   			color: rgba(0, 0, 0, 0.7);
   			cursor: pointer;
+			visibility: hidden;
+			opacity: 0;
+			-prefixes-transition-property: opacity, visibility;
+			-prefixes-transition-duration: .4s, 0s;
+			-prefixes-transition-delay: 0s, .4s;
 		}
 
 		nav > ul > li:hover 
 		{
+			visibility: visible;
+			opacity: 1;
+			-prefixes-transition-delay: 0s, 0s;
   			border-radius: 5px;
   			background-color: black;
-  			opacity: .6;
 		}
 
 		ul.drop-menu 
