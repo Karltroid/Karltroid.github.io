@@ -5,12 +5,10 @@
 	<title>Karl Palmer - Social</title>
 	<link rel="icon" href="icon.png" />
 	<style type="text/css">
-
 		*
 		{
 			font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 		}
-
 		#banner 
 		{
 			position: absolute;
@@ -21,7 +19,6 @@
 			height: 80px;
 			z-index: -1;
 		}
-
 		#mainscreen 
 		{
 			position: absolute;
@@ -32,37 +29,31 @@
 			height: 100%;
 			z-index: -2;
 		}
-
 		#links,#Right 
 		{
 			float: right;
 			padding-right: 50px;
 			padding-top: 8px;
 		}
-
 		#karlpalmertext
 		{
 			font-size: 30px;
 			padding-left: 28px;
 			padding-top: 8px; /* Social Media Icons height */
 		}
-
 		#textcolor
 		{
 			color: black;
 		}
-
 		#line-heightFIX
 		{
 			line-height: 0px;
 		}
-
 		#Social
 		{
 			float: right;
 			padding-top: 21px;
 		}
-
 		.sliding-middle-out 
 		{
 			display: inline-block;
@@ -84,18 +75,15 @@
 			width: 100%;
 			background: #262626;
 		}
-
 		body
 		{
 			margin: 0;
 		}
-
 		div 
 		{
 			font-size: 30px;
 			font-weight: 100;
 		}
-
 		a
 		{
 			font-size: 20px;
@@ -104,7 +92,6 @@
 			text-decoration: none;
 			color: black;
 		}
-
 		/*  v  SOCIAL MEDIA TABLE  v  */
 		nav 
 		{
@@ -114,12 +101,10 @@
   			padding-right: 0px; 
   			text-align: center;
 		}
-
 		nav li
 		{
 			display: inline;
 		}
-
 		nav > ul 
 		{
   			list-style: none;
@@ -127,7 +112,6 @@
   			margin: 0;
   			border-radius: 5px;
 		}
-
 		nav > ul > li 
 		{
   			float: left;
@@ -141,16 +125,14 @@
   			color: rgba(0, 0, 0, 0.7);
   			cursor: pointer;
 		}
-		
-							/* v li color v */
-		nav > ul > li#youtube:hover 
+		nav > ul > li:hover 
 		{
+			visibility: visible;
+			-prefixes-transition-delay: 0s, 0s;
   			border-radius: 5px;
-  			background-color: red;
-  			opacity: 1;
+  			background-color: black;
+			opacity: .6;
 		}
-							/* ^ li color ^ */
-
 		ul.drop-menu 
 		{
   			position: absolute;
@@ -159,7 +141,6 @@
   			width: 100%;
   			padding: 0;
 		}
-
 		ul.drop-menu li 
 		{
   			color: rgba(255, 255, 255, 0.7);
@@ -167,43 +148,17 @@
 		}
 		ul.drop-menu li:hover 
 		{
-
 		}
-
 		ul.drop-menu li:last-child 
 		{
   			border-radius: 0px 0px 5px 5px;
 		}
-
 		li:hover > ul.drop-menu li 
 		{
   			display: inline-block;
   			text-align: center;
 		}
-		
-		ul li ul {				/* v FADE TRANSITIONS v */
-    		position:absolute;
-    		float:left;
-    		width:100px;
-    		height:0;
-    		padding:10px;
-    		margin:0;
-    		visibility: hidden;
-    		opacity: 0;
-    		transition-property: opacity, visibility;
-    		transition-duration: .7s, 0s;
-    		transition-delay: 0s, .4s;
-		}
-
-		ul > li:hover ul 
-		{
-    		visibility: visible;
-    		opacity: 1;
-    		transition-delay: 0s, 0s;
-		}					/* ^ FADE TRANSITIONS ^ */
-		
 		/*  ^  SOCIAL MEDIA TABLE  ^  */
-
 	</style>
 </head>
 <body>
@@ -226,18 +181,10 @@
 	<nav>
 	  <ul>
 
-	    <li id="youtube"><img src="YoutubeLogo.png" height="65">
+	    <li><img src="YoutubeLogo.png" height="65">
 	      <ul class="drop-menu menu-3">
 	        <li><a id="textcolor" class="sliding-middle-out" href="http://www.Youtube.com/KarltroidGaming">KarltroidGaming</a>
 	        <b><font>Watch My Videos!</font></b>
-	        </li>
-	      </ul>
-	    </li>
-
-		<li><img src="PintrestLogo.png" height="65">
-	      <ul class="drop-menu menu-4">
-	        <li><a id="textcolor" class="sliding-middle-out" href="https://www.pinterest.com/Karltroid/">Karltroid</a><br>
-      		<b><font color="white">Pintrest</font></b>
 	        </li>
 	      </ul>
 	    </li>
@@ -270,6 +217,14 @@
 	        <li><a class="sliding-middle-out" href="https://vine.co/u/1089775005820444672"><font color="#17591a">Karltroid</font></a><br>
 	        <b><font size="2">Entertainment for 6 Seconds!</font></b><br>
 	        <p>This is a test!</p>
+	      </ul>
+	    </li>
+		  
+	    <li><img src="TwitterLogo.png" height="65">
+	      <ul class="drop-menu menu-4">
+	        <li><a id="textcolor" class="sliding-middle-out" href="https://www.twitter.com/Karltroid/">@Karltroid</a><br>
+      		<b><font color="white">Tweet @ Me!</font></b>
+	        </li>
 	      </ul>
 	    </li>
 
