@@ -137,12 +137,21 @@
   			cursor: pointer;
 		}
 
-		nav > ul > li:hover 
+									/* v li color v */
+		nav > ul > li#google:hover 
 		{
   			border-radius: 5px;
-  			background-color: black;
-  			opacity: .6;
+  			background-color: orange;
+  			opacity: 1;
 		}
+
+		nav > ul > li#entertainment:hover 
+		{
+  			border-radius: 5px;
+  			background-color: red;
+  			opacity: 1;
+		}
+							/* ^ li color ^ */
 
 		ul.drop-menu 
 		{
@@ -173,6 +182,28 @@
   			display: inline-block;
   			text-align: center;
 		}
+		
+		ul li ul {				/* v FADE TRANSITIONS v */
+    		position:absolute;
+    		float:left;
+    		width:100px;
+    		height:0;
+    		padding:10px;
+    		margin:0;
+    		visibility: hidden;
+    		opacity: 0;
+    		transition-property: opacity, visibility;
+    		transition-duration: .7s, 0s;
+    		transition-delay: 0s, .4s;
+		}
+
+		ul > li:hover ul 
+		{
+    		visibility: visible;
+    		opacity: 1;
+    		transition-delay: 0s, 0s;
+		}						/* ^ FADE TRANSITIONS ^ */
+		
 		/*  ^  ICON TABLE  ^  */
 
 	</style>
@@ -197,7 +228,7 @@
 	<nav>
 	  <ul>
 
-	    <li><img src="Google.png" height="65">
+	    <li id="google"><img src="Google.png" height="65">
 	      <ul class="drop-menu menu-3">
 	        <li><font id="textcolor" size="4">Working at Google</font><br>
 	        <b><font color="black">Explanation</font></b>
@@ -205,7 +236,7 @@
 	      </ul>
 	    </li>
 
-	    <li><img src="Entertainer.png" height="65">
+	    <li id="entertainment"><img src="Entertainer.png" height="65">
 	      <ul class="drop-menu menu-3">
 	        <li><font id="textcolor" size="4">Becoming a Youtube/Twitch Entertainer</font><br>
 	        <b><font color="black">Explanation</font></b><br><br>
