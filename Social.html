@@ -125,14 +125,67 @@
   			color: rgba(0, 0, 0, 0.7);
   			cursor: pointer;
 		}
-		nav > ul > li:hover 
+							/* v li color v */
+		nav > ul > li#youtube:hover 
 		{
-			visibility: visible;
-			-prefixes-transition-delay: 0s, 0s;
   			border-radius: 5px;
-  			background-color: black;
-			opacity: .6;
+  			background-color: #C6494F;
+  			opacity: 1;
 		}
+
+		nav > ul > li#instagram:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #B57555;
+  			opacity: 1;
+		}
+
+		nav > ul > li#gmail:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #E56D4B;
+  			opacity: 1;
+		}
+
+		nav > ul > li#snapchat:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #EAEA85;
+  			opacity: 1;
+		}
+
+		nav > ul > li#vine:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #84CEB2;
+  			opacity: 1;
+		}
+		nav > ul > li#twitter:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #84CEB2;
+  			opacity: 1;
+		}
+		nav > ul > li#tumblr:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #596F7F;
+  			opacity: 1;
+		}
+		nav > ul > li#facebook:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #374C6B;
+  			opacity: 1;
+		}
+		nav > ul > li#twitch:hover 
+		{
+  			border-radius: 5px;
+  			background-color: #796A93;
+  			opacity: 1;
+		}
+							/* ^ li color ^ */
+			
 		ul.drop-menu 
 		{
   			position: absolute;
@@ -158,6 +211,28 @@
   			display: inline-block;
   			text-align: center;
 		}
+		
+		ul li ul {				/* v FADE TRANSITIONS v */
+    		position:absolute;
+    		float:left;
+    		width:100px;
+    		height:0;
+    		padding:10px;
+    		margin:0;
+    		visibility: hidden;
+    		opacity: 0;
+    		transition-property: opacity, visibility;
+    		transition-duration: .7s, 0s;
+    		transition-delay: 0s, .4s;
+		}
+
+		ul > li:hover ul 
+		{
+    		visibility: visible;
+    		opacity: 1;
+    		transition-delay: 0s, 0s;
+		}						/* ^ FADE TRANSITIONS ^ */
+		
 		/*  ^  SOCIAL MEDIA TABLE  ^  */
 	</style>
 </head>
@@ -181,7 +256,7 @@
 	<nav>
 	  <ul>
 
-	    <li><img src="YoutubeLogo.png" height="65">
+	    <li id="youtube"><img src="YoutubeLogo.png" height="65">
 	      <ul class="drop-menu menu-3">
 	        <li><a id="textcolor" class="sliding-middle-out" href="http://www.Youtube.com/KarltroidGaming">KarltroidGaming</a>
 	        <b><font>Watch My Videos!</font></b>
@@ -189,7 +264,7 @@
 	      </ul>
 	    </li>
 
-		<li><img src="InstagramLogo.png" height="65">
+	    <li id="instagram"><img src="InstagramLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a id="textcolor" class="sliding-middle-out fadein" href="http://www.Instagram.com/Karltroid">Karltroid</a><br>
 	        <b><font size="2">Ckeck Out My Photos!</font></b>
@@ -197,7 +272,7 @@
 	      </ul>
 	    </li>
 
-	    <li><img src="GmailLogo.png" height="65">
+	    <li id="gmail"><img src="GmailLogo.png" height="65">
 	      <ul class="drop-menu menu-2">
 	        <li><a id="textcolor" class="sliding-middle-out">KarltroidContact</a><br>
 	        <b><font color="white">Email Me!</font></b>
@@ -205,14 +280,14 @@
 	      </ul>
 	    </li>
 
-		<li><img src="SnapchatLogo.png" height="65">
+	    <li id="snapchat"><img src="SnapchatLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a id="textcolor" class="sliding-middle-out" href="">Karltroid</a><br>
 	        <b><font color="gray">Contact Me with "No Trace"</font></b>
 	      </ul>
 	    </li>
 
-		<li><img src="VineLogo.png" height="65">
+	    <li id="vine"><img src="VineLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a class="sliding-middle-out" href="https://vine.co/u/1089775005820444672"><font color="#17591a">Karltroid</font></a><br>
 	        <b><font size="2">Entertainment for 6 Seconds!</font></b><br>
@@ -220,7 +295,7 @@
 	      </ul>
 	    </li>
 		  
-	    <li><img src="TwitterLogo.png" height="65">
+	    <li id="twitter"><img src="TwitterLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a id="textcolor" class="sliding-middle-out" href="https://www.twitter.com/Karltroid/">@Karltroid</a><br>
       		<b><font color="white">Tweet @ Me!</font></b>
@@ -228,7 +303,7 @@
 	      </ul>
 	    </li>
 
-		<li><img src="TumblrLogo.png" height="65">
+	    <li id="tumblr"><img src="TumblrLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a id="textcolor" class="sliding-middle-out" href="http://www.Karltroid.Tumblr.com">Karltroid</a><br>
 	        <b><font color="white">Tumblr</font></b>
@@ -236,7 +311,7 @@
 	      </ul>
 	    </li>
 
-		<li><img src="FacebookLogo.png" height="65">
+	    <li id="facebook"><img src="FacebookLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a id="textcolor" class="sliding-middle-out" href="http://www.Facebook.com/Karltroid">Karltroid</a><br>
 	        <b><font size="2">Share Some Clickbate Articles!</font></b>
@@ -244,7 +319,7 @@
 	      </ul>
 	    </li>
 
-	    <li><img src="TwitchLogo.png" height="65">
+	    <li img="twitch"><img src="TwitchLogo.png" height="65">
 	      <ul class="drop-menu menu-4">
 	        <li><a id="textcolor" class="sliding-middle-out" href="http://www.Twitch.tv/Karltroid">Karltroid</a><br>
 	        <b>Watch Me Live!</b>
