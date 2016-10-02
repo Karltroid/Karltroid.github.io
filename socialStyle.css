@@ -208,7 +208,7 @@
 								/* v ANIMATIONS v */
 		ul li ul 
 		{				
-    			left:0;
+			position:absolute;
 			line-height:16px;
     			z-index:1;
     			max-height:0;
