@@ -206,29 +206,26 @@
 		}
 		
 								/* v ANIMATIONS v */
-
 		ul li ul 
 		{				
     			position:absolute;
-			line-height:16;
-    			left:0;
-    			z-index:1;
-    			max-height:0;
-    			overflow:hidden;
-    			-webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
-    			-webkit-transform-origin:50% 0;
-    			-webkit-transition:350ms;
-    			-moz-transition:350ms;
-    			-o-transition:350ms;
-    			transition:350ms;
+			line-height: 16px;
+    			float:center;
+    			width:100px;
+    			padding:10px;
+    			margin:0;
+    			visibility: hidden;
+    			opacity: 0;
+    			transition-property: opacity, visibility;
+    			transition-duration: .7s, 0s;
+    			transition-delay: 0s, .4s;
 		}
 
 		ul > li:hover ul 
 		{
-    			max-height:1000px;
-    			-webkit-transform:perspective(400) rotate3d(0,0,0,0), transition-delay: 0s, 0s;
-		}			
-
-								/* ^ ANIMATIONS ^ */
+    			visibility: visible;
+    			opacity: 1;
+    			transition-delay: 0s, 0s;
+		}						/* ^ ANIMATIONS ^ */
 		
 		/*  ^  SOCIAL MEDIA TABLE  ^  */
