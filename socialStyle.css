@@ -206,11 +206,25 @@
 		}
 		
 								/* v ANIMATIONS v */
+
 		ul li ul 
 		{				
     			position:absolute;
+			line-height: 16px;
     			left:0;
-    			top:36px;
+   			z-index:1;
+			visibility: 0;
+			opacity: 0;
+			transition-property:opacity, visibility;
+			transition-duration: .7s, 0s;
+			transition-delay: 0s, .4s;
+		}
+
+		ul li ul 
+		{				
+    			position:absolute;
+			line-height: 16px;
+    			left:0;
    			z-index:1;
     			max-height:0;
     			overflow:hidden;
