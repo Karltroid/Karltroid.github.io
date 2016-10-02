@@ -213,19 +213,6 @@
 			line-height: 16px;
     			left:0;
    			z-index:1;
-			visibility: 0;
-			opacity: 0;
-			transition-property:opacity, visibility;
-			transition-duration: .7s, 0s;
-			transition-delay: 0s, .4s;
-		}
-
-		ul li ul 
-		{				
-    			position:absolute;
-			line-height: 16px;
-    			left:0;
-   			z-index:1;
     			max-height:0;
     			overflow:hidden;
     			-webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
@@ -234,20 +221,18 @@
     			-moz-transition:350ms;
     			-o-transition:350ms;
     			transition:350ms;
+			transition-property: opacity, visibility;
+			transition-duration: .7s, 0s;
+			transition-delay: 0s, .4s'
 		}
 
 		ul > li:hover ul 
 		{
     			max-height:1000px;
-    			-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+			visibility:visible;
+			opacity:1;
+    			-webkit-transform:perspective(400) rotate3d(0,0,0,0), transition-delay: 0s, 0s;
 		}			
-
-		ul > li:hover ul 
-		{
-    			visibility: visible;
-    			opacity: 1;
-    			transition-delay: 0s, 0s;
-		}	
 
 								/* ^ ANIMATIONS ^ */
 		
