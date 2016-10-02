@@ -206,29 +206,6 @@
 		}
 		
 								/* v ANIMATIONS v */
-		nav li lu
-		{
-			position:absolute;
-			left:0;
-			top:36px;
-			z-index:1;
-		}
-
-		nav li ul li
-		{
-			overflow:hidden;
-			max-height:0;
-			-webkit-transition:max-height 500ms ease;
-			-moz-transition:max-height 500ms ease;
-			-o-transition:max-height 500ms ease;
-			transition:max-height 500ms ease;
-		}
-
-		nav ul > li:hover ul li
-		{
-			max-height:150px;
-		}
-
 		ul li ul 
 		{				
     			position:absolute;
