@@ -208,7 +208,7 @@
 		ul li ul {				/* v FADE TRANSITIONS v */
     		position:absolute;
 		line-height: 16px;
-    		float:left;
+    		float:center;
     		width:100px;
     		height:0;
     		padding:10px;
