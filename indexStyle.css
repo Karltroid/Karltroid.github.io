@@ -16,12 +16,8 @@
 
 		#mainscreen 
 		{
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			right: 0px;
-			width: 85%;
-			height: 85%;
+			position: relative;
+			width: 100%;
 			z-index: -2;
 		}
 
