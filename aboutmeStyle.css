@@ -1,4 +1,4 @@
-		*
+	*
 		{
 			font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 		}
@@ -135,7 +135,6 @@
   			border-radius: 5px;
   			background-color: #D3CCA7;
   			opacity: 1;
-			
 		}
 
 		nav > ul > li#sport:hover 
@@ -198,38 +197,6 @@
 		}
 		
 								/* v ANIMATIONS v */
-
-		.buildin
-		{
-			-webkit-perspective: 1000px;
-			perspective: 1000px;
-		}
-
-		.item
-		{
-		}
-
-		.item.is-visible
-		{
-			-webkit-animation: Items 600ms ease-in fowards;
-				animation: Items 600ms ease-in fowards;
-		}
-
-		@-webkit-keyframes item
-		{
-			0%
-			{
-				opacity: 0;
-				height: 0%;
-			}
-			
-			100%
-			{
-				opacity: 1;
-				height: 100%
-			}
-		}	
-
 		ul li ul 
 		{				
 			position:absolute;
