@@ -216,18 +216,18 @@
 				animation: Items 600ms ease-in fowards;
 		}
 
-		@-webkit-keyframes items2
+		@-webkit-keyframes items
 		{
 			0%
 			{
 				opacity: 0;
 				height: 0%;
-				padding: 0px;
 			}
 			
 			100%
 			{
 				opacity: 1;
+				height: 100%
 			}
 		}	
 
