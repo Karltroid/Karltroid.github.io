@@ -216,7 +216,7 @@
 				animation: Items 600ms ease-in fowards;
 		}
 
-		@-webkit-keyframes items
+		@-webkit-keyframes item
 		{
 			0%
 			{
