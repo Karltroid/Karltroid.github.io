@@ -1,0 +1,155 @@
+@font-face
+{
+	font-family: cabin;
+	src: url(../../fonts/Cabin.otf);
+}
+
+@font-face
+{
+	font-family: Kozuka;
+	src: url(../../fonts/Kozuka-Gothic-Pro-EL.otf);
+}
+		
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#MainPageBackground
+{
+	width: 100vw;
+}
+		
+div.MainText
+{
+	display: none;
+	width: 36vw;
+	height: 18vw;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-shadow: 2px 2px #000000;
+}
+
+div.KarlPalmer
+{
+	font-size: 7.35vw;
+	font-family: Kozuka;
+	text-align: center;
+	position: absolute;
+	height: 8vw;
+	line-height: .4vw;
+	margin-top: 3.58vw;
+	left: -.2vw;
+}
+
+div.Karltroid
+{
+	font-family: cabin;
+	letter-spacing: .7vw;
+	font-size: 3.5vw;
+	font-weight: bold;
+	position: absolute;
+	top: 70.5%;
+	left: 37.5%;
+}
+
+span.PalmerKarltroidLine
+{
+	border-top: .15vw solid;
+}
+
+div.EntertainerDeveloperText
+{
+	text-align: center;
+	font-family: Kozuka;
+	line-height: 1.1;
+	font-size: 2.1vw;
+	border-bottom: .15vw solid;
+	width: 31%;
+	height: 28.5%;
+}
+
+div.Karltroid:hover
+{
+	text-shadow: 2px 2px #FFFFFF;
+}
+
+span.Developer:hover
+{
+	text-shadow: 1px 1px #FFFFFF;
+}
+
+span.Entertainer:hover
+{
+	text-shadow: 1px 1px #FFFFFF;
+}
+
+/* Social Links */
+
+div.SocialLinks
+{
+	width: 17.747vw;
+	position: absolute;
+	left: 1.7vw;
+	text-align: center;
+}
+
+#Twitter
+{
+	width: 2.5vw;
+	height: 2.5vw;
+	transition: .5s;
+}
+	#Twitter:hover
+	{
+		opacity: .6;
+		transition: .7s;
+	}
+
+#Instagram
+{
+	width: 2.5vw;
+	height: 2.5vw;
+	transition: .5s;
+}
+	#Instagram:hover
+	{
+		opacity: .6;
+		transition: .7s;
+	}
+
+#Twitch
+{
+	width: 2.5vw;
+	height: 2.5vw;
+	transition: .5s;
+}
+	#Twitch:hover
+	{
+		opacity: .6;
+		transition: .7s;	
+	}
+
+#Youtube
+{
+	width: 2.5vw;
+	height: 2.5vw;
+	transition: .5s;
+}
+	#Youtube:hover
+	{
+		opacity: .6;
+		transition: .7s;	
+	}

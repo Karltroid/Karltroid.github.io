@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-	<title>Karl Palmer - Home</title>
-	<link rel="icon" href="icon.png" />
-	<link rel="stylesheet" type="text/css" href="indexStyle.css" />
-</head>
-<body bgcolor="#BABABA">
+	<head>
+		<title>Karl Palmer</title>
+		<link rel="icon" href="images/favicon.ico" />
+		<script type="text/javascript" src="js/index/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index/styles.css" />
+		<script type="text/javascript" src="js/index/scripts.js"></script>
+	</head>
+	<body>
 
-	<div>
-		<img id="banner" src="Banner.png" alt="Banner Image"/>
-		<a id="karlpalmertext" class="sliding-middle-out" href="https://goo.gl/ot0cc6">Karl Palmer</a>
-		<a id="links" class="sliding-middle-out" href="https://goo.gl/ZIVjsp">Social</a>
-		<a id="links" class="sliding-middle-out" href="https://goo.gl/Ws1Y3F">Future Plans</a>
-		<a id="links" class="sliding-middle-out" href="https://goo.gl/IwXQvs">About Me</a>
-		<font id="home" color="gray" size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font id="home" color="gray">HOME</font>	
-	</div>
+		<!-- Main Center Text (lines 13-38) -->
+		<div class="MainText">
+			<div class="EntertainerDeveloperText">
+				<span onmouseover="DeveloperSelected()" onmouseleave="nothingSelected()" class="Developer">
+					Developer;
+				</span>
+				<span onmouseover="EntertainerSelected()" onmouseleave="nothingSelected()" class="Entertainer">
+					Entertainer.
+				</span>
+			</div>
+			<div class="KarlPalmer">
+				Karl Palmer
+			</div>
+			<div class="Karltroid">
+				<span class="PalmerKarltroidLine">
+					&nbsp<a href="">Karltroid</a><font size="1px">&nbsp</font>
+				</span>
+				<div class="SocialLinks">
+					<!-- Twitter (lines 31-33) -->
+					<a href="http://Twitter.com/Karltroid">
+						<img id="Twitter" src="images/index/twitter.png">
+					</a>
+					<!-- Instagram (lines 31-33) -->
+					<a href="http://Instagram.com/Karltroid">
+						<img id="Instagram" src="images/index/instagram.png">
+					</a>
+					<!-- Twitch (lines 39-41) -->
+					<a href="http://Twitch.tv/Karltroid">
+						<img id="Twitch" src="images/index/twitch.png">
+					</a>
+					<!-- Youtube (lines 33-45) -->
+					<a href="http://Youtube.com/KarltroidGaming">
+						<img id="Youtube" src="images/index/youtube.png">
+					</a>
+				</div>
+			</div>
+		</div>
 
-	<img id="mainscreen" src="background1.png">
-
-</body>
+	<!-- Background Image/Video On Hover (line 53-54) -->
+	<img id="MainPageBackground" src="images/index/nothingSelected.png">
+	</body>
 </html>
