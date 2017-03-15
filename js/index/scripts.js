@@ -4,13 +4,13 @@ $(document).ready(function(){
 
 	$('span.Developer').click(function(){
 		$('div.MainText').animate({
-			'marginTop' : "-=39vw"
+			'marginTop' : "-=45vw"
 		});
 	});
 
 	$('span.Entertainer').click(function(){
 		$('div.MainText').animate({
-			'marginTop' : "-=39vw"
+			'marginTop' : "-=45vw"
 		});
 	});
 
