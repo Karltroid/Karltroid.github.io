@@ -9,7 +9,7 @@
 	font-family: Kozuka;
 	src: url(../../fonts/Kozuka-Gothic-Pro-EL.otf);
 }
-		
+	
 body
 {
 	margin: 0;
@@ -28,6 +28,31 @@ a
 {
 	width: 100vw;
 }
+
+#title
+{
+	font-size: 10vw;
+	font-family: cabin;
+}
+
+.DeveloperBackButton
+{
+	position: absolute;
+	color: white;
+	bottom: 45vw;
+	padding-left: 1vw;
+	padding-Right: 1vw;
+	font-weight: bold;
+	font-size: 2vw;
+	font-family: Kozuka;
+	display: none;
+	transition: .5s;
+	text-shadow: 2px 2px #000000;
+}
+	.DeveloperBackButton:hover
+	{
+		text-shadow: 2px 2px #FFFFFF;
+	}
 		
 div.MainText
 {
@@ -153,3 +178,9 @@ div.SocialLinks
 		opacity: .6;
 		transition: .7s;	
 	}
+
+.DeveloperInfo
+{
+	color: white;
+	text-align: center;
+}
