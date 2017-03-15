@@ -1,5 +1,5 @@
-# learning-javascript
-The purpose of this "project" is to start learning Javascript.
-At the moments I know HTML & CSS.
+# Karltroid.Github.io
+This is Karl Palmer(me)'s personal website!
 
--I am using http://www.w3schools.com/js/default.asp to learn!
+-HIGHLY WIP
+
