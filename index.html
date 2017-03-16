@@ -9,9 +9,25 @@
 	</head>
 	<body>
 
-		<!-- Background Image/Video On Hover (line 13) -->
-		<img id="MainPageBackground" src="images/index/nothingSelected.png">
-		<!-- Main Center Text (lines 15-50) -->
+		<!-- Background Image/Video On Hover (line 13-14) -->
+		<!-- ***FEATURE DELAYED UNTIL I CAN FIND A MORE CLEAN/PLESANT WAY OF DOING IT; LOOKED TO GLITCHY & OUT OF PLACE***
+		<img id="MainPageBackground" src="images/index/nothingSelected.png"> -->
+
+		<!-- Profile Picture -->
+		<img class="ProfilePicture" src="images/index/ProfilePicture.png">
+		<div class="ProfileInfo">
+			<span id="ProfileInfo_Header">
+				Info
+			</span>
+			<p>
+				<b>Age:</b> 14<br>
+				<b>Height:</b> 5ft 4in<br>
+				<b>Birthday:</b> May 16th<br>
+				<b>High School:</b> Assabet Valley<br>
+				<b>Favorite Game:</b> Rocket League<br>
+			</p>
+		</div>
+		<!-- Main Center Text -->
 		<div class="MainText">
 			<div class="EntertainerDeveloperText">
 				<span onmouseover="DeveloperSelected()" onmouseleave="nothingSelected()" class="Developer">
@@ -29,31 +45,52 @@
 					&nbsp<a href="">Karltroid</a><font size="1px">&nbsp</font>
 				</span>
 				<div class="SocialLinks">
-					<!-- Twitter (lines 33-35) -->
+					<!-- Twitter -->
 					<a href="http://Twitter.com/Karltroid">
 						<img id="Twitter" src="images/index/twitter.png">
 					</a>
-					<!-- Instagram (lines 37-39) -->
+					<!-- Instagram -->
 					<a href="http://Instagram.com/Karltroid">
 						<img id="Instagram" src="images/index/instagram.png">
 					</a>
-					<!-- Twitch (lines 31-43) -->
+					<!-- Twitch -->
 					<a href="http://Twitch.tv/Karltroid">
 						<img id="Twitch" src="images/index/twitch.png">
 					</a>
-					<!-- Youtube (lines 45-47) -->
+					<!-- Youtube -->
 					<a href="http://Youtube.com/KarltroidGaming">
 						<img id="Youtube" src="images/index/youtube.png">
 					</a>
 				</div>
 			</div>
 		</div>
-		<!--Back button that appears when developer button is pressed-->
-		<div class="DeveloperBackButton">
-			return to home.
+		<div class="EntertainerInfo">
+			<!--Back button that appears when entertainer button is pressed-->
+			<div class="EntertainerBackButton">
+				return to home.
+			</div>
+			<!-- Entertainer Section Title -->
+			<span id="title">
+				entertainer.
+			</span><br>
+			<!-- Entertainer Section Body -->
+			<div class="EntertainerInfo_Body">
+				This is the entertainer section's body!
+			</div>
 		</div>
 		<div class="DeveloperInfo">
-			<span id="title">developer;</span>
+			<!--Back button that appears when developer button is pressed-->
+			<div class="DeveloperBackButton">
+				return to home.
+			</div>
+			<!-- Developer Section Title -->
+			<span id="title">
+				developer;
+			</span><br>
+			<!-- Developer Section Body -->
+			<div class="DeveloperInfo_Body">
+				This is the developer section's body!
+			</div>
 		</div>
 
 	</body>
