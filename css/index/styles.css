@@ -255,6 +255,7 @@ div.SocialLinks
 	position: absolute;
 	margin: auto; margin-top: 1vw;
 	top: 60vw; left: 0; bottom: 0; right: 0;
+	width: 78vw;
 }
 	.DeveloperInfo_Body
 	{
@@ -268,6 +269,7 @@ div.SocialLinks
 	position: absolute;
 	margin: auto; margin-top: 1vw;
 	top: 60vw; left: 0; bottom: 0; right: 0;
+	width: 78vw;
 }
 	.EntertainerInfo_Body
 	{
