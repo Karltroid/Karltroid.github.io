@@ -1,0 +1,302 @@
+/*
+	--------------------------------------------
+	|https://Karltroid.Github.io [] styles.css |
+	--------------------------------------------
+*/
+
+/* General Page Setup Stuff{ */
+	@font-face
+	{
+		font-family: cabin;
+		src: url(../../fonts/Cabin.otf);
+	}
+
+	@font-face
+	{
+		font-family: kozuka;
+		src: url(../../fonts/Kozuka-Gothic-Pro-EL.otf);
+	}
+		
+	body
+	{
+		margin: 0;
+		padding: 0;
+		background-color: black;
+		overflow: hidden;
+	}
+
+	a
+	{
+		text-decoration: none;
+		color: white;
+	}
+
+	b
+	{
+		opacity: 1;
+		font-weight: bolder;
+	}
+
+	#title
+	{
+		font-size: 10vw;
+		font-family: cabin;
+	}
+/* General Page Setup Stuff} */
+
+/* Background Image{ */
+	img.MainPageBackground_Developer /* BG For - developer:Hover(.js) */
+	{
+		width: 100vw;
+		opacity: 0;
+		position: absolute;
+	}
+	img.MainPageBackground_Entertainer /* BG For - entertainer:Hover(.js) */
+	{
+		width: 100vw;
+		opacity: 0;
+		position: absolute;
+	}
+/* Background Image} */
+
+/* Profile Picture{ */
+	img.ProfilePicture
+	{
+		width: 9vw; height: 9vw;
+		transition: 1s;
+		position: absolute;
+		left: 89.5vw; top: 1.5vw;
+	}
+		img.ProfilePicture:hover
+		{
+			transition: 1s;
+			opacity: .4;
+		}
+		div.ProfileInfo
+		{
+			color: white;
+			font-family: kozuka;
+			height: 9vw; width: 9vw;
+			position: absolute;
+			font-size: .57vw;
+			text-align: center;
+			top: 1.1vw; left: 89.5vw;
+			transition: 1s;
+			padding-top: 1.15vw;
+			opacity: 0;
+		}
+			div.ProfileInfo:hover
+			{
+				opacity: .7;
+				transition: 1s;
+			}
+			span#ProfileInfo_Header
+			{
+				font-family: cabin;
+				font-weight: bolder;
+				font-size: 1vw;
+				letter-spacing: .2vw;
+			}
+/* Profile Picture} */		
+
+/* Main Text Section{ */
+	div.MainText
+	{
+		display: none;
+		width: 36vw;
+		height: 18vw;
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		text-shadow: 2px 2px #000000;
+	}
+
+	div.KarlPalmer
+	{
+		font-size: 7.35vw;
+		font-family: kozuka;
+		text-align: center;
+		position: absolute;
+		height: 8vw;
+		line-height: .4vw;
+		margin-top: 3.58vw;
+		left: -.2vw;
+		pointer-events: none;
+	}
+
+	div.Karltroid
+	{
+		font-family: cabin;
+		letter-spacing: .7vw;
+		font-size: 3.5vw;
+		font-weight: bold;
+		position: absolute;
+		top: 70.5%;
+		left: 37.5%;
+	}
+
+	span.PalmerKarltroidLine
+	{
+		border-top: .15vw solid;
+	}
+
+	div.EntertainerDeveloperText
+	{
+		text-align: center;
+		font-family: kozuka;
+		line-height: 1.1;
+		font-size: 2.1vw;
+		border-bottom: .15vw solid;
+		width: 31%;
+		height: 28.5%;
+	}
+
+	div.Karltroid:hover
+	{
+		text-shadow: 2px 2px #FFFFFF;
+	}
+
+	span.Developer:hover
+	{
+		text-shadow: 1px 1px #FFFFFF;
+	}
+
+	span.Entertainer:hover
+	{
+		text-shadow: 1px 1px #FFFFFF;
+	}
+	/* Social Links{ */
+		div.SocialLinks
+		{
+			width: 17.747vw;
+			position: absolute;
+			left: 1.7vw;
+			text-align: center;
+		}
+			img#Twitter
+			{
+				width: 2.5vw;
+				height: 2.5vw;
+				transition: .5s;
+			}
+				img#Twitter:hover
+				{
+					opacity: .6;
+					transition: .7s;
+				}
+
+			img#Instagram
+			{
+				width: 2.5vw;
+				height: 2.5vw;
+				transition: .5s;
+			}
+				img#Instagram:hover
+				{
+					opacity: .6;
+					transition: .7s;
+				}
+
+			img#Twitch
+			{
+				width: 2.5vw;
+				height: 2.5vw;
+				transition: .5s;
+			}
+				img#Twitch:hover
+				{
+					opacity: .6;
+					transition: .7s;	
+				}
+
+			img#Youtube
+			{
+				width: 2.5vw;
+				height: 2.5vw;
+				transition: .5s;
+			}
+				img#Youtube:hover
+				{
+					opacity: .6;
+					transition: .7s;	
+				}
+	/* Social Links} */
+/* Main Text Section} */
+
+/* Developer Section{ */
+	div.DeveloperBackButton
+	{
+		position: absolute;
+		color: white;
+		bottom: 45vw;
+		font-weight: bold;
+		font-size: 2vw;
+		font-family: kozuka;
+		display: none;
+		transition: .5s;
+		text-shadow: 2px 2px #000000;
+		margin: auto;
+		left: 0; right: 0; bottom: .1vw;
+	}
+		div.DeveloperBackButton:hover
+			{
+				text-shadow: 1.5px 1.5px #FFFFFF;
+				font-weight: bolder;
+			}
+
+	div.DeveloperInfo
+	{
+		color: white;
+		text-align: center;
+		position: absolute;
+		margin: auto; margin-top: 1vw;
+		top: 60vw; left: 0; bottom: 0; right: 0;
+		width: 78vw;
+		opacity: 0;
+	}
+		div.DeveloperInfo_Body
+		{
+			font-family: kozuka;
+		}
+/* Developer Section} */
+
+/* Entertainer Section{ */
+	div.EntertainerBackButton
+	{
+		position: absolute;
+		color: white;
+		bottom: 45vw;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		font-weight: bold;
+		font-size: 2vw;
+		font-family: kozuka;
+		display: none;
+		transition: .5s;
+		position: absolute;
+		left: 0; right: 0; bottom: .1vw;
+		text-shadow: 2px 2px #000000;
+	}
+		div.EntertainerBackButton:hover
+		{
+			text-shadow: 1.5px 1.5px #FFFFFF;
+			font-weight: bolder;
+		}
+
+	div.EntertainerInfo
+	{
+		color: white;
+		text-align: center;
+		position: absolute;
+		margin: auto; margin-top: 1vw;
+		top: 60vw; left: 0; bottom: 0; right: 0;
+		width: 78vw;
+		opacity: 0;
+	}
+		div.EntertainerInfo_Body
+		{
+			font-family: kozuka;
+		}
+/* Entertainer Section} */
