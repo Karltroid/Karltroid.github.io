@@ -1,7 +1,13 @@
+//	---------------------------------------------
+//	| https://Karltroid.Github.io [] styles.css |
+//	---------------------------------------------
 $(document).ready(function(){
 
 	$('div.MainText').fadeIn(1000);	//page fade-in
 
+	//
+	//	Developer Section
+	//
 	$('span.Developer').click(function(){ // developer clicked
 		$('div.MainText').animate({
 			'marginTop' : "-=100vw"
@@ -9,20 +15,49 @@ $(document).ready(function(){
 		$('div.DeveloperInfo').animate({
 			'marginTop' : "-=56vw"
 		});
+		$('div.DeveloperInfo').css({
+			'opacity' : "1"
+		});
 		$('div.DeveloperBackButton').css({
 			'display' : "inline"
 		});
 	});
-
-	$('div.DeveloperBackButton').click(function(){ // developer page back button clicked
+	$("span.Developer").mouseenter(function(){	// Background Change
+		$('img.MainPageBackground_Developer').animate({
+			'opacity' : "1"
+		});
+	});
+	$("span.Developer").mouseleave(function(){	// Background Remove
+		$('img.MainPageBackground_Developer').animate({
+			'opacity' : "0"
+		});
+	});
+	$('div.DeveloperBackButton').click(function(){ // Developer back button clicked
 		$('div.MainText').animate({
 			'marginTop' : "+=100vw"
 		});
 		$('div.DeveloperInfo').animate({
 			'marginTop' : "+=56vw"
 		});
+		$('div.DeveloperInfo').animate({
+			'opacity' : "0"
+		});
 		$('div.DeveloperBackButton').css({
 			'display' : "none"
+		});
+	});
+
+	//
+	//	Entertainer Section
+	//
+	$("span.Entertainer").mouseenter(function(){	// Background Change
+		$('img.MainPageBackground_Entertainer').animate({
+			'opacity' : "1"
+		});
+	});
+	$("span.Entertainer").mouseleave(function(){	//Background Remove
+		$('img.MainPageBackground_Entertainer').animate({
+			'opacity' : "0"
 		});
 	});
 
@@ -33,8 +68,14 @@ $(document).ready(function(){
 		$('div.EntertainerInfo').animate({
 			'marginTop' : "-=56vw"
 		});
+		$('div.EntertainerInfo').css({
+			'opacity' : "1"
+		});
 		$('div.EntertainerBackButton').css({
 			'display' : "inline"
+		});
+		$('div.MainText').animate({
+			'opacity'  : '0'
 		});
 	});
 	
@@ -45,8 +86,14 @@ $(document).ready(function(){
 		$('div.EntertainerInfo').animate({
 			'marginTop' : "+=56vw"
 		});
+		$('div.EntertainerInfo').animate({
+			'opacity'  : '0'
+		});
 		$('div.EntertainerBackButton').css({
 			'display' : "none"
+		});
+		$('div.MainText').css({
+			'opacity'  : '1'
 		});
 	});
 
@@ -62,21 +109,3 @@ $(document).ready(function(){
 	});
 
 }); 
-
-
-//***FEATURE DELAYED UNTIL I CAN FIND A MORE CLEAN/PLESANT WAY OF DOING IT; LOOKED TO GLITCHY & OUT OF PLACE***
-//
-//function nothingSelected()
-//{
-//	document.getElementById('MainPageBackground').src='images/index/nothingSelected.png';
-//}
-
-//function DeveloperSelected()
-//{
-//	document.getElementById('MainPageBackground').src='images/index/testimageDeveloper.png';
-//}
-
-//function EntertainerSelected()
-//{
-//	document.getElementById('MainPageBackground').src='images/index/testimageEntertainer.png';
-//}
