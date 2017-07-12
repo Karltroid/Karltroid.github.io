@@ -1,0 +1,104 @@
+/* ******************************************************************************
+* 																				*
+* Author: Karl Palmer															*
+* 																				*
+* Date: 3/26/2017 																*
+* 																				*
+* Program: My Personal Website													*
+* 																				*
+* Description: Karl's personal website CSS										*
+* 																				*
+* History: 																		*
+* 																				*
+********************************************************************************* */
+
+/* General Page Setup Stuff{ */
+
+	@font-face
+	{
+		font-family: kozuka;
+		src: url(../../../../fonts/Kozuka-Gothic-Pro-EL.otf);
+	}
+		
+	body
+	{
+		margin: 0;
+		padding: 0;
+		color: white;
+		font-family: kozuka;
+		background-image: url('../images/bg.jpg');
+	}
+	a
+	{
+		text-decoration: none;
+		color: white;
+	}
+	a:hover img.ConsoleType
+	{
+		background-color: rgba(255,255,255,.4);
+		border-radius: 50%;
+		border: .1vw solid white;
+		transition: .5s;
+	}
+	h1
+	{
+		font-size: 8vh;
+		font-weight: bolder;
+		margin: 0;
+	}
+	h1:hover
+	{
+		cursor: pointer;
+	}
+	em
+	{
+		font-size: 2.2vh;
+		font-weight: bolder;
+		font-style: normal;
+		padding: 0; margin: 0;
+	}
+	
+	.EmuHeader
+	{
+		width: 100%;
+		text-align: center;
+		padding-top: .02px;
+		opacity: .75;
+	}
+	
+	.TitlePage_Body
+	{
+		width: 75%; height: 65vh;
+		margin-top: 6%;
+		text-align: center;
+		transform: translateX(17%);
+	}
+	
+	div#GridLayout
+	{
+		display: inline-block;
+		padding: 5px; padding-bottom: 20px;
+	}
+	div#GridLayout
+	{
+		display: inline-block;
+		padding: 5px; padding-bottom: 20px;
+	}
+	
+	img.ConsoleType
+	{
+		width: 15vw; max-width: 200px; min-width: 110px;
+		background-color: rgba(0,0,0,.1);
+		transition: .2s;
+		border-radius: 10%;
+		border: .1vw solid white;
+		padding: .4vw;
+	}
+
+	h2
+	{
+		font-family: Arial Black;
+		font-size: 120%;
+		letter-spacing: .5px;
+		padding: 0; margin: 0;
+	}

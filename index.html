@@ -2,101 +2,61 @@
 <html>
 	<head>
 		<!--
-			--------------------------------------------
-			|https://Karltroid.Github.io [] index.html |
-			--------------------------------------------
+			***************************************************************
+			* 															  *
+			* Author: Karl Palmer 										  *
+			* 															  *
+			* Date: 7/10/2017 											  *
+			* 															  *
+			* Program: Karltroid.com - HTML Page Markup				      *
+			* 														      *
+			* Description: Karl Palmer's achievements and skills (resume) *
+			* 															  *
+			* History: V1 - Initial site implementation 				  *
+			* 															  *
+			***************************************************************
 		-->
-		<title>Karl Palmer</title>
+		<title>
+			Karl Palmer
+		</title>
 		<link rel="icon" href="images/favicon.ico" />
-		<script type="text/javascript" src="js/index/jquery-3.1.1.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/index/styles.css" />
-		<script type="text/javascript" src="js/index/scripts.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script type="text/javascript" src="js/scripts.js"></script>
 	</head>
 	<body>
-
-		<!-- Background Image/Video -->
-		<img class="MainPageBackground_Developer" src="images/index/testimageDeveloper.png">
-		<img class="MainPageBackground_Entertainer" src="images/index/testimageEntertainer.png">
-
-		<!-- Profile Picture -->
-		<img class="ProfilePicture" src="images/index/ProfilePicture.png">
-		<div class="ProfileInfo">
-			<span id="ProfileInfo_Header">
-				Info
-			</span>
-			<p>
-				<b>Age:</b> 14<br>
-				<b>Height:</b> 5ft 4in<br>
-				<b>Birthday:</b> May 16th<br>
-				<b>High School:</b> Assabet Valley<br>
-				<b>Favorite Game:</b> Rocket League<br>
-			</p>
+	
+		<header>
+			<div class="MainHeader">
+				<script type="text/javascript">
+					$(function() { // load homepage when user clicks on my name/title
+						$("h1").click(function() {
+							$('.content')
+								.html('<img class="loading" src="images/loading.gif" />')
+								.load('_Webpages/_HomePage.html');
+						});
+					});
+				</script>
+				<h1>
+					Karl Palmer
+				</h1>
+				<em>
+					Programmer, Web Developer, and Hardware Enthusiast.
+				</em>
+			</div>
+		</header>
+		
+		<!--
+			The page that is currently loaded will go in this div
+		-->
+		<div class="content">
 		</div>
-		<!-- Main Center Text -->
-		<div class="MainText">
-			<div class="EntertainerDeveloperText">
-				<span onmouseover="DeveloperSelected()" onmouseleave="nothingSelected()" class="Developer">
-					Developer;
-				</span>
-				<span onmouseover="EntertainerSelected()" onmouseleave="nothingSelected()" class="Entertainer">
-					Entertainer.
-				</span>
-			</div>
-			<div class="KarlPalmer">
-				Karl Palmer
-			</div>
-			<div class="Karltroid">
-				<span class="PalmerKarltroidLine">
-					&nbsp<a href="">Karltroid</a><font size="1px">&nbsp</font>
-				</span>
-				<div class="SocialLinks">
-					<!-- Twitter -->
-					<a href="http://Twitter.com/Karltroid">
-						<img id="Twitter" src="images/index/twitter.png">
-					</a>
-					<!-- Instagram -->
-					<a href="http://Instagram.com/Karltroid">
-						<img id="Instagram" src="images/index/instagram.png">
-					</a>
-					<!-- Twitch -->
-					<a href="http://Twitch.tv/Karltroid">
-						<img id="Twitch" src="images/index/twitch.png">
-					</a>
-					<!-- Youtube -->
-					<a href="http://Youtube.com/KarltroidGaming">
-						<img id="Youtube" src="images/index/youtube.png">
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="EntertainerInfo">
-			<!--Back button that appears when entertainer button is pressed-->
-			<div class="EntertainerBackButton">
-				return to home.
-			</div>
-			<!-- Entertainer Section Title -->
-			<span id="title">
-				entertainer.
-			</span><br>
-			<!-- Entertainer Section Body -->
-			<div class="EntertainerInfo_Body">
-				This is the entertainer section's body!
-			</div>
-		</div>
-		<div class="DeveloperInfo">
-			<!--Back button that appears when developer button is pressed-->
-			<div class="DeveloperBackButton">
-				return to home.
-			</div>
-			<!-- Developer Section Title -->
-			<span id="title">
-				developer;
-			</span><br>
-			<!-- Developer Section Body -->
-			<div class="DeveloperInfo_Body">
-				This is the developer section's body!
-			</div>
-		</div>
-
+		
+		<footer>
+			This website was created by Karl Palmer
+			<br />
+			Icons made by <a id="FlaticonLink" href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a id="FlaticonLink" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a id="FlaticonLink" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+		</footer>
+		
 	</body>
 </html>
