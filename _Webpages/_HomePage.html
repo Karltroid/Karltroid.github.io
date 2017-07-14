@@ -1,9 +1,28 @@
 <div id="ConsoleTypeGrid">
 
 	<!--
+		About/Contact Me
+	-->
+	<div class="GridLayout" id="AboutContact">
+		<script type="text/javascript">
+			$(function() {
+				$("#AboutContact").click(function() {
+					$('.content')
+						.html('<img class="loading" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/loading.gif" />')
+						.load('https://rawgit.com/Karltroid/karltroid.github.io/master/_Webpages/AboutContact/_AboutContact.html');
+				});
+			});
+		</script>
+		<img id="CategoryImage" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/ConsoleTypeGrid/aboutcontact.png" />
+		<br />
+		<h3>
+			About/Contact Me
+		</h3>
+	</div>
+	
+	<!--
 		Past Jobs
 	-->
-	
 	<div class="GridLayout" id="PastJobs">
 		<script type="text/javascript">
 			$(function() {
