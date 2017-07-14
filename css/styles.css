@@ -145,6 +145,11 @@ input[type=text], select, textarea
 }
 
 /* Style the submit button with a specific background color etc */
+label
+{
+	text-align: center;
+}
+
 input[type=submit] 
 {
     background-color: #ecfffe;
