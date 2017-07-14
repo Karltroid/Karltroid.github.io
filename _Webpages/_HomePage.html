@@ -25,6 +25,15 @@
 		Skills
 	-->
 	<div class="GridLayout" id="Skills">
+		<script type="text/javascript">
+			$(function() {
+				$("#Skills").click(function() {
+					$('.content')
+						.html('<img class="loading" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/loading.gif" />')
+						.load('https://rawgit.com/Karltroid/karltroid.github.io/master/_Webpages/Skills/_Skills.html');
+				});
+			});
+		</script>
 		<img id="CategoryImage" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/ConsoleTypeGrid/skills.png" />
 		<br />
 		<h3>
