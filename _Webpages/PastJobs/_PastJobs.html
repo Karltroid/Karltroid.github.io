@@ -1,19 +1,26 @@
-<div class="InfoSection">
-	<h2>
-		Past Jobs
-	</h2>
-	<div id="ConsoleTypeGrid">
-	
-		<!--
-			Honey Pot Orchids
-		-->
-		<div class="GridLayout" id="HoneyPotOrchids">
-			<img id="CategoryImage" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/PastJobs/HoneyPotOrchids.png" />
-			<br />
-			<h3>
-				Honey Pot Hill Orchards
-			</h3>
-		</div>
-	
+<h3>
+	Past Jobs
+</h3>
+<div id="ConsoleTypeGrid">
+
+	<!--
+		Honey Pot Hill Orchards
+	-->
+	<div class="GridLayout" id="HoneyPotOrchids">
+		<script type="text/javascript">
+			$(function() {
+				$("#HoneyPotOrchids").click(function() {
+					$('.content')
+						.html('<img class="loading" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/loading.gif" />')
+						.load('https://rawgit.com/Karltroid/karltroid.github.io/master/_Webpages/PastJobs/HoneyPotHillOrchids/_HoneyPotHillOrchids.html');
+				});
+			});
+		</script>
+		<img id="CategoryImage" src="https://rawgit.com/Karltroid/karltroid.github.io/master/images/PastJobs/HoneyPotOrchids.png" />
+		<br />
+		<h4>
+			Honey Pot Hill Orchards
+		</h4>
 	</div>
+
 </div>

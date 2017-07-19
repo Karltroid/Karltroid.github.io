@@ -112,6 +112,12 @@ h2
 
 h3
 {
+	padding: 0; margin: 0;
+	font-size: 2vw;
+}
+
+h4
+{
 	font-family: Arial Black;
 	font-size: 120%;
 	letter-spacing: .5px;
@@ -130,6 +136,8 @@ h3
 {
 	text-decoration: underline;
 }
+
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea 
