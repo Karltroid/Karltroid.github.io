@@ -1,19 +1,19 @@
 @font-face
 {
 	font-family: kozuka;
-	src: url(https://rawgit.com/Karltroid/karltroid.github.io/master/fonts/Kozuka-Gothic-Pro-EL.otf);
+	src: url(https://cdn.rawgit.com/Karltroid/Karltroid.github.io/b3775fce/fonts/Kozuka-Gothic-Pro-EL.otf);
 }
 
 @font-face
 {
 	font-family: Arial Black;
-	src: url(https://rawgit.com/Karltroid/karltroid.github.io/master/fonts/arial-black.ttf);
+	src: url(https://cdn.rawgit.com/Karltroid/Karltroid.github.io/b3775fce/fonts/arial-black.ttf);
 }
 
 @font-face
 {
 	font-family: FFX;
-	src: url(https://rawgit.com/Karltroid/karltroid.github.io/master/fonts/FFX-Thin-Regular.ttf);
+	src: url(https://cdn.rawgit.com/Karltroid/Karltroid.github.io/b3775fce/fonts/FFX-Thin-Regular.ttf);
 }
 	
 html, body
