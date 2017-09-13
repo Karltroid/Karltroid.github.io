@@ -4,11 +4,20 @@
 	Assabet Valley Regional Technical High School
 </h3>
 <div id="ConsoleTypeGrid">
-
+	
 	<!--
 		Grades
 	-->
 	<div class="GridLayout" id="Grades">
+		<script type="text/javascript">
+			$(function() {
+				$("#Grades").click(function() {
+					$('.content')
+						.html('<img class="loading" src="https://cdn.rawgit.com/Karltroid/Karltroid.github.io/b3775fce/images/loading.gif" />')
+						.load('https://rawgit.com/Karltroid/Karltroid.github.io/master/_Webpages/HighSchool/Grades/_Grades.html');
+				});
+			});
+		</script>
 		<img id="CategoryImage" src="https://cdn.rawgit.com/Karltroid/Karltroid.github.io/b3775fce/images/HighSchool/Grades.png" />
 		<br />
 		<h4>
