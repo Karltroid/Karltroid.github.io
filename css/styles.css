@@ -45,6 +45,7 @@ footer
 	z-index: 10000;
 	overflow: hidden;
 	font-family: FFX;
+	pointer-events: none;
 }
 div.GridLayout:hover img#CategoryImage
 {
@@ -67,6 +68,34 @@ h1:hover
 	background-color: rgba(0,0,0,.1);
 	transition: .25s;
 }
+
+h2
+{
+	padding: 0; margin: 0;
+	font-size: 2vw;
+}
+
+h3
+{
+	padding: 0; margin: 0;
+	font-size: 2vw;
+}
+
+h3:hover
+{
+	cursor: pointer;
+	background-color: rgba(0,0,0,.1);
+	transition: .25s;
+}
+
+h4
+{
+	font-family: Arial Black;
+	font-size: 120%;
+	letter-spacing: .5px;
+	padding: 0; margin: 0;
+}
+
 em
 {
 	font-size: 2.2vh;
@@ -111,26 +140,6 @@ img#CategoryImage
 	border-radius: 10%;
 	border: .1vw solid white;
 	padding: .4vw;
-}
-
-h2
-{
-	padding: 0; margin: 0;
-	font-size: 2vw;
-}
-
-h3
-{
-	padding: 0; margin: 0;
-	font-size: 2vw;
-}
-
-h4
-{
-	font-family: Arial Black;
-	font-size: 120%;
-	letter-spacing: .5px;
-	padding: 0; margin: 0;
 }
 
 .loading
