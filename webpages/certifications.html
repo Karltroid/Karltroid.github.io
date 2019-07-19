@@ -11,18 +11,64 @@
 		<!-- stylesheets & scripts -->
 		<link rel="stylesheet" type="text/css" href="../styles/vars.css" />
 		<link rel="stylesheet" type="text/css" href="../styles/main_styles.css" />
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="../scripts/socials.js"></script>
 		<script src="../scripts/loadinfo.js"></script>
 
 		<!-- site title & icon -->
-		<link rel="icon" type="image/x-icon" href="../images/meta/favicon.png" />
+		<link rel="icon" type="image/x-icon" href="../images/karlpalmer/profile1_bw.jpg" />
 		<title>Karl Palmer</title>
 	</head>
 	<body>
 
 		<header>
-			<script type="text/javascript">document.getElementsByTagName('header')[0].innerHTML = readTextFile("");</script>
+			<div id="header-content">
+
+				<div id="left">
+					<div id="left-content">
+						left content
+					</div>
+				</div>
+
+				<div id="middle">
+					<div id="middle-content">
+						<img id="header-profile" src="../images/karlpalmer/profile1_bw.jpg" alt="" />
+						<h1>Karl Palmer</h1>
+						<aside>Programmer, web developer, and hardware enthusiast.</aside>
+						<div id="socials">
+							<div id="socials-content">
+								<a href="https://twitter.com/Karltroid"><div id="twitter" class="social"
+								onmouseenter="changesrc('twitter','../images/socials/twitter_color.png')"
+								onmouseleave="changesrc('twitter','../images/socials/twitter.png')">
+									<img src="../images/socials/twitter.png" />
+								</div></a>
+								<a href="https://instagram.com/Karltroid"><div id="instagram" class="social"
+								onmouseenter="changesrc('instagram','../images/socials/instagram_color.png')"
+								onmouseleave="changesrc('instagram','../images/socials/instagram.png')">
+									<img src="../images/socials/instagram.png" />
+								</div></a>
+								<a href="https://linkedin.com/in/karl-palmer-183a24163/"><div id="linkedin" class="social"
+								onmouseenter="changesrc('linkedin','../images/socials/linkedin_color.png')"
+								onmouseleave="changesrc('linkedin','../images/socials/linkedin.png')">
+									<img src="../images/socials/linkedin.png" />
+								</div></a>
+								<a href="https://github.com/Karltroid"><div id="github" class="social"
+								onmouseenter="changesrc('github','../images/socials/github_color.png')"
+								onmouseleave="changesrc('github','../images/socials/github.png')">
+									<img src="../images/socials/github.png" />
+								</div></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<script type="text/javascript"></script>
+				<div id="right">
+					<div id="right-content">
+						right content
+					</div>
+				</div>
+
+			</div>
 		</header>
 
 		<nav><!--
@@ -146,9 +192,7 @@
 		</div>
 
 		<footer>
-			<script type="text/javascript">
-				getElementsByTagName('footer')[0].innerHTML = readTextFile("");
-			</script>
+			Website fully designed and developed by Karl Palmer • July 2019
 		</footer>
 
 	</body>
