@@ -1,0 +1,37 @@
+/*********
+* FONTS *
+*********/
+@font-face 
+{
+	font-family: product-sans-bold;
+	src: url('../fonts/ProductSansBold.ttf');
+}
+@font-face 
+{
+	font-family: product-sans;
+	src: url('../fonts/ProductSansRegular.ttf');
+}
+
+/*************
+* VARIABLES *
+*************/
+:root
+{
+	/* colors */
+	--indexDarkBlue: rgb(21, 47, 62);
+	--indexLightBlue: rgb(128, 198, 232);
+	--indexYellow: rgb(253, 193, 50);
+	--indexDarkYellow: rgb(221, 161, 18);
+	--indexGray: rgb(193, 193, 193);
+
+	/* paddings & margins */
+	--desktopPadding: 60px;
+	--mobilePadding: 42px;
+	--centerBlock: 0 auto;
+
+	/* box shadows */
+	--leftBoxShadow: -15px 15px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.20);
+	--rightBoxShadow: 15px 15px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.20);
+	--centeredBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+	--centeredSubtleBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+}
