@@ -1,2 +1,2 @@
 # Karltroid.github.io
-This website is my resume that displays my skills and achievements, along with contact information.
+This website describes everything you need to know about Karl Palmer: Skills, experience, recommendations, awards, resume, etc.
