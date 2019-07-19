@@ -137,7 +137,7 @@ nav #about-me
 	z-index: 3;
 }
 
-nav a
+nav a,#certifications-list a
 {
 	color: black;
 }
@@ -171,6 +171,15 @@ footer
 	box-shadow: var(--centeredSubtleBoxShadow);
 	border-bottom: 6px solid rgb(80, 80, 80);
 	background-color: white;
+	width: 94.1%;
+	transition: .1s;
+}
+
+.certification:hover
+{
+	transition: .25s;
+	transform: scale(.975);
+	box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5)
 }
 
 .certification img

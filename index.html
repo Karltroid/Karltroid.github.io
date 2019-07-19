@@ -11,7 +11,9 @@
 		<!-- stylesheets & scripts -->
 		<link rel="stylesheet" type="text/css" href="styles/vars.css" />
 		<link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="scripts/socials.js"></script>
+		<script src="scripts/loadinfo.js"></script>
 
 		<!-- site title & icon -->
 		<link rel="icon" type="image/x-icon" href="images/meta/favicon.png" />
@@ -20,62 +22,15 @@
 	<body>
 
 		<header>
-			<div id="header-content">
-
-				<div id="left">
-					<div id="left-content">
-						left content
-					</div>
-				</div>
-
-				<div id="middle">
-					<div id="middle-content">
-						<img id="header-profile" src="images/karlpalmer/profile1_bw.jpg" alt="" />
-						<h1>Karl Palmer</h1>
-						<aside>Programmer, web developer, and hardware enthusiast.</aside>
-						<div id="socials">
-							<div id="socials-content">
-								<a href="https://twitter.com/Karltroid"><div id="twitter" class="social"
-								onmouseenter="changesrc('twitter','images/socials/twitter_color.png')"
-								onmouseleave="changesrc('twitter','images/socials/twitter.png')">
-									<img src="images/socials/twitter.png" />
-								</div></a>
-								<a href="https://instagram.com/Karltroid"><div id="instagram" class="social"
-								onmouseenter="changesrc('instagram','images/socials/instagram_color.png')"
-								onmouseleave="changesrc('instagram','images/socials/instagram.png')">
-									<img src="images/socials/instagram.png" />
-								</div></a>
-								<a href="https://linkedin.com/in/karl-palmer-183a24163/"><div id="linkedin" class="social"
-								onmouseenter="changesrc('linkedin','images/socials/linkedin_color.png')"
-								onmouseleave="changesrc('linkedin','images/socials/linkedin.png')">
-									<img src="images/socials/linkedin.png" />
-								</div></a>
-								<a href="https://github.com/Karltroid"><div id="github" class="social"
-								onmouseenter="changesrc('github','images/socials/github_color.png')"
-								onmouseleave="changesrc('github','images/socials/github.png')">
-									<img src="images/socials/github.png" />
-								</div></a>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				<script type="text/javascript"></script>
-				<div id="right">
-					<div id="right-content">
-						right content
-					</div>
-				</div>
-
-			</div>
+			<script type="text/javascript">document.getElementsByTagName('header')[0].innerHTML = readTextFile("");</script>
 		</header>
 
 		<nav><!--
-			--><a href=""><div id="portfolio">Portfolio</div></a><!--
-			--><a href=""><div  id="contact-me">Contact Me</div></a><!--
+			--><a href="webpages/portfolio.html"><div id="portfolio">Portfolio</div></a><!--
+			--><a href="webpages/contactme.html"><div  id="contact-me">Contact Me</div></a><!--
 			--><a href="index.html"><div  id="about-me"><u>About Me</u></div></a><!--
-			--><a href="certifications.html"><div  id="certifications">Certifications</div></a><!--
-			--><a href=""><div  id="awards">Awards</div></a>
+			--><a href="webpages/certifications.html"><div  id="certifications">Certifications</div></a><!--
+			--><a href="webpages/awards.html"><div  id="awards">Awards</div></a>
 		</nav>
 		
 		Things to include here:
@@ -85,6 +40,12 @@
 			<li>Hobbys / Interests</li>
 			<li>Education</li>
 		</ul>
+
+		<footer>
+			<script type="text/javascript">
+				document.getElementsByTagName('footer')[0].innerHTML = readTextFile("");
+			</script>
+		</footer>
 
 	</body>
 </html>
