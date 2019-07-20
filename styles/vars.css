@@ -33,5 +33,6 @@
 	--leftBoxShadow: -15px 15px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.20);
 	--rightBoxShadow: 15px 15px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.20);
 	--centeredBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+	--centeredBoxShadowHover: 0 0px 25px rgba(0, 0, 0, 0.3);
 	--centeredSubtleBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.3);
 }

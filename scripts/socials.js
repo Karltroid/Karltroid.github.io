@@ -1,7 +1,5 @@
 function changesrc(id, file)
 {
-	var parentdiv = document.getElementById(id);
-	var image = parentdiv.children;
-	console.log(image);
-	image[0].src = file;
+	var image = document.getElementById(id).children;		// getting the image the will be modified
+	image[0].src = file;																		// changing the src of image
 }
