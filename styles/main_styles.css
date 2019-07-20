@@ -191,13 +191,17 @@ h1.section-title aside
 	font-size: .6em;
 	font-weight: lighter;
 	background-color: transparent;
-	padding: 0 0 10px;
+	padding: 0;
+	margin-top: 14px;
+	float: right;
+
 }
 
 h1.section-title a
 {
 	color: rgb(60,60,60);
 	text-decoration: none;
+	text-align: right;
 }
 
 h1.section-title a:hover
@@ -302,6 +306,11 @@ h1.section-title a:hover
 		grid-column-gap: 25px;
 		grid-row-gap: 40px;
 	}
+
+	.certification
+	{
+		width: 94.5%;
+	}
 }
 
 @media only screen and (max-width: 1315px)
@@ -318,5 +327,10 @@ h1.section-title a:hover
 		grid-template-columns: repeat(1, 1fr);
 		grid-column-gap: 0;
 		grid-row-gap: 30px;
+	}
+
+	.certification
+	{
+		width: 92%;
 	}
 }
